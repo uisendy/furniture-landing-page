@@ -1,0 +1,257 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(185, 138, 8);
+    --secondary-color: rgb(58, 58, 56);
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#header-img{
+    width: 120px;
+    height: 70px;
+    float: left;
+}
+
+#nav-bar{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: var(--primary-color) solid 0.5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: gray;
+    padding: 1.3rem;
+}
+
+nav li a:hover{
+    background-color: #eef5fd;
+    color: rgb(18, 85, 116)
+    
+}
+
+#home{
+    margin-top: 73px;
+    padding-left: 6rem;
+    background-color: #36096d;
+    background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+
+
+#home h1{
+    margin: 0;
+    padding-top: 8rem;
+    width: 400px;
+    height: auto;
+    text-align: left;
+    font-size: 3.3rem;
+    line-height: 1;
+    font-weight: lighter;
+    
+}
+
+#home p{
+    margin-top: 1rem;
+    width: 400px;
+    height: auto;
+    text-align: left;
+    line-height: 1.4; 
+    color: #eef5fd; 
+}
+
+.home-img{
+    position: absolute;
+    bottom: -10;
+    right: 0;
+    margin-right: 8rem;
+    padding-top: 5rem;
+
+}
+.search-area{
+    padding-right: 3rem;
+}
+
+#email{
+    border-radius: 20px;
+    border-color: none;
+    border: 2px solid white;
+    padding: 3px;
+    background-color: transparent;
+    color: rgb(226, 226, 226);
+}
+
+.search-area button, .home-desc button{
+    border-radius: 20px;
+    border-color: none;
+    border: 2px solid white;
+    background-color: transparent;
+    padding: 3px 15px;
+    color: white;
+}
+
+.search-area button:hover, .home-desc button:hover{
+    background-color: white;
+    color: orange;
+}
+
+#about-us{
+    display: flex;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.abt-us h2, .abt-us p{
+    width: 25rem;
+}
+
+.abt-us h2{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.abt-us p{
+    font-weight: 300;
+}
+
+#showroom{
+    border-top: solid 1px var(--primary-color);
+    border-bottom: solid 1px var(--primary-color);
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    margin: 0;
+}
+
+#showroom h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.show-room-sec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-room-sec .items{
+    text-align: center;
+    border-radius: 5px;
+    padding: 2rem;
+    
+}
+
+.show-room-sec .items:hover{
+    background-color: antiquewhite;
+}
+
+#showroom p{
+    margin: 0;
+    
+}
+
+#showroom .price-tag{
+    font-weight: bold;
+}
+
+#showroom img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+#subscription{
+    background-color: rgb(248, 248, 248);
+    width: auto;
+    height: auto;
+}
+
+.subscription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#subscription .sub{
+    
+    width: 20%;
+    padding: 8px;
+    float: left;
+
+}
+
+#subscription a{
+    text-decoration: none;
+    color: black;
+}
+
+#subscription ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    border: 1px solid #eee;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    
+}
+
+#subscription ul:hover{ 
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2) 
+}
+
+#subscription .sub-header{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 25px;
+}
+#subscription li{
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .subs {
+      width: 100%;
+    }
+} 
+
+.contacts{
+    padding-bottom: 2rem;
+}
+
+#contact{
+    display: inline;
+    text-align: center;
+}
+
+#contact p{
+   margin: 0;
+}
